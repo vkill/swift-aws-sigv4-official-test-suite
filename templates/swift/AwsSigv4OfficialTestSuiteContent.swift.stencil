@@ -1,0 +1,47 @@
+// Generated using AwsSigv4OfficialTestSuiteRun - https://github.com/vkill/swift-aws-sigv4-official-test-suite
+// DO NOT EDIT
+
+public struct AwsSigv4OfficialTestSuiteContent {
+    public struct AwsSigv4OfficialTestSuite {
+        public struct Case {
+            public let name: String
+
+            public let req: String
+            public let creq: String
+            public let sts: String
+            public let authz: String
+            public let sreq: String
+        }
+
+        public let credentialScope: String
+        public let secretKey: String
+        public let cases: [Case]
+    }
+
+    public static let suite = AwsSigv4OfficialTestSuite(
+        credentialScope: "{{ suite.credentialScope }}",
+        secretKey: "{{ suite.secretKey }}",
+        cases: [
+{% for `case` in suite.cases %}
+            AwsSigv4OfficialTestSuite.Case(
+                name: "{{ `case`.name }}",
+                req: """
+{{ `case`.req }}
+""",
+                creq: """
+{{ `case`.creq }}
+""",
+                sts: """
+{{ `case`.sts }}
+""",
+                authz: """
+{{ `case`.authz }}
+""",
+                sreq: """
+{{ `case`.sreq }}
+"""
+            ){% if forloop.counter != suite.cases.count %},{% endif %}
+{% endfor %}
+        ]
+    )
+}
