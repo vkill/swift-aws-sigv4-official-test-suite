@@ -36,7 +36,7 @@ public struct AwsSigv4OfficialTestSuiteContent {
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/./",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -72,7 +72,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/./",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -98,7 +98,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -155,7 +155,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -201,7 +201,7 @@ value2
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -237,7 +237,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -263,7 +263,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/example1/example2/../..",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -299,7 +299,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/example1/example2/../..",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -325,7 +325,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -367,7 +367,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -398,7 +398,7 @@ value1
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -440,7 +440,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -471,7 +471,7 @@ VALUE1
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -523,7 +523,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -564,7 +564,7 @@ value1
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?ሴ=bar",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -600,7 +600,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?ሴ=bar",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -626,7 +626,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/./example",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -662,7 +662,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/./example",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -688,7 +688,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Content-Type", """
 application/x-www-form-urlencoded; charset=utf8
@@ -730,7 +730,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Content-Type", """
 application/x-www-form-urlencoded; charset=utf8
@@ -761,7 +761,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -797,7 +797,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -823,7 +823,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value2&Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -859,7 +859,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value2&Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -885,7 +885,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/example/..",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -921,7 +921,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/example/..",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -947,7 +947,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -983,7 +983,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1014,7 +1014,7 @@ AQoDYXdzEPT//////////wEXAMPLEtc764bNrC9SAPBSM22wDOk4x4HIZ8j4FZTwdQWLWsKWHGBuFqwA
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1050,7 +1050,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1076,7 +1076,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1112,7 +1112,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1138,7 +1138,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1180,7 +1180,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1211,7 +1211,7 @@ AQoDYXdzEPT//////////wEXAMPLEtc764bNrC9SAPBSM22wDOk4x4HIZ8j4FZTwdQWLWsKWHGBuFqwA
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1247,7 +1247,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1273,7 +1273,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1321,7 +1321,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1357,7 +1357,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz=-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1393,7 +1393,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz=-._~0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1419,7 +1419,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1461,7 +1461,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1492,7 +1492,7 @@ value1  value2     value3
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "//",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1528,7 +1528,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "//",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1554,7 +1554,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/ሴ",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1590,7 +1590,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/ሴ",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1616,7 +1616,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Content-Type", """
 application/x-www-form-urlencoded
@@ -1658,7 +1658,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Content-Type", """
 application/x-www-form-urlencoded
@@ -1689,7 +1689,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value2&Param1=Value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1725,7 +1725,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param1=value2&Param1=Value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1751,7 +1751,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1787,7 +1787,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1813,7 +1813,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param2=value2&Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1849,7 +1849,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/?Param2=value2&Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1875,7 +1875,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1911,7 +1911,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "/",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1937,7 +1937,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1973,7 +1973,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "POST",
                     requestURI: "/?Param1=value1",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -1999,7 +1999,7 @@ example.amazonaws.com
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "//example//",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -2035,7 +2035,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
                     requestURI: "//example//",
-                    httpVersion: "HTTP/1.1",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -2060,8 +2060,8 @@ example.amazonaws.com
                 name: "get-space",
                 req: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
-                    requestURI: "/example",
-                    httpVersion: "space/ HTTP/1.1",
+                    requestURI: "/example space/",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com
@@ -2096,8 +2096,8 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
 """,
                 sreq: AwsSigv4OfficialTestSuite.Case.Request(
                     method: "GET",
-                    requestURI: "/example",
-                    httpVersion: "space/ HTTP/1.1",
+                    requestURI: "/example space/",
+                    httpVersion: "1.1",
                     messageHeaders: [
                         ["Host", """
 example.amazonaws.com

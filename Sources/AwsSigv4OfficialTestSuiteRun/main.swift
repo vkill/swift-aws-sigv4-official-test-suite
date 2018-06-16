@@ -42,4 +42,5 @@ let fileHandle = FileHandle(forWritingAtPath: workDir + "Tests/AwsSigv4OfficialT
 defer {
     fileHandle.closeFile()
 }
+fileHandle.write("".data(using: .utf8)!)
 fileHandle.write(swiftContent.data(using: .utf8)!)

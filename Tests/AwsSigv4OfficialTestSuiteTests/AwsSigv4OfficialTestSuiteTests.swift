@@ -9,7 +9,7 @@ final class AwsSigv4OfficialTestSuiteTests: XCTestCase {
 
         XCTAssertEqual(`case`.req.method, "POST")
         XCTAssertEqual(`case`.req.requestURI, "/")
-        XCTAssertEqual(`case`.req.httpVersion, "HTTP/1.1")
+        XCTAssertEqual(`case`.req.httpVersion, "1.1")
         XCTAssertEqual(`case`.req.messageHeaders, [
             ["Host", "example.amazonaws.com"],
             ["X-Amz-Date", "20150830T123600Z"]
@@ -38,7 +38,7 @@ AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/service/aws4_request,
 
         XCTAssertEqual(`case`.sreq.method, "POST")
         XCTAssertEqual(`case`.sreq.requestURI, "/")
-        XCTAssertEqual(`case`.sreq.httpVersion, "HTTP/1.1")
+        XCTAssertEqual(`case`.sreq.httpVersion, "1.1")
         XCTAssertEqual(`case`.sreq.messageHeaders, [
             ["Host", "example.amazonaws.com"],
             ["X-Amz-Date", "20150830T123600Z"],

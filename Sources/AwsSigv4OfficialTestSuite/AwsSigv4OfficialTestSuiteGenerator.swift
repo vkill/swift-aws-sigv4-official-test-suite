@@ -114,6 +114,7 @@ public final class AwsSigv4OfficialTestSuiteGenerator {
         var headerContentLength: Int? = nil
 
         let SP = " ".data(using: encoding)!
+        let SPHTTPSLASH = " HTTP/".data(using: encoding)!
         let CRLF = "\n".data(using: encoding)! //TODO lost \r
         let COLON = ":".data(using: encoding)!
 
@@ -130,7 +131,7 @@ public final class AwsSigv4OfficialTestSuiteGenerator {
                 data.removeSubrange(0..<range.upperBound)
                 state = .onRequestURI
             case .onRequestURI:
-                guard let range = data.range(of: SP) else {
+                guard let range = data.range(of: SPHTTPSLASH) else {
                     fatalError()
                 }
                 requestURI = String(data: data.subdata(in: 0..<range.lowerBound), encoding: encoding)!
