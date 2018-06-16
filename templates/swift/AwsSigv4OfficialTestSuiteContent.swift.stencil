@@ -4,13 +4,21 @@
 public struct AwsSigv4OfficialTestSuiteContent {
     public struct AwsSigv4OfficialTestSuite {
         public struct Case {
+        public struct Request {
+                public let method: String
+                public let requestURI: String
+                public let httpVersion: String
+                public let messageHeaders: [[String]]
+                public let messageBody: String?
+            }
+
             public let name: String
 
-            public let req: String
+            public let req: Request
             public let creq: String
             public let sts: String
             public let authz: String
-            public let sreq: String
+            public let sreq: Request
         }
 
         public let credentialScope: String
@@ -22,12 +30,21 @@ public struct AwsSigv4OfficialTestSuiteContent {
         credentialScope: "{{ suite.credentialScope }}",
         secretKey: "{{ suite.secretKey }}",
         cases: [
-{% for `case` in suite.cases %}
+        {% for `case` in suite.cases %}
             AwsSigv4OfficialTestSuite.Case(
                 name: "{{ `case`.name }}",
-                req: """
-{{ `case`.req }}
-""",
+                req: AwsSigv4OfficialTestSuite.Case.Request(
+                    method: "{{ `case`.req.method }}",
+                    requestURI: "{{ `case`.req.requestURI }}",
+                    httpVersion: "{{ `case`.req.httpVersion }}",
+                    messageHeaders: [{% for messageHeader in `case`.req.messageHeaders %}
+                        ["{{ messageHeader.0 }}", """
+{{ messageHeader.1 }}
+"""
+                        ]{% if forloop.counter != `case`.req.messageHeaders.count %},{% endif %}
+                    {% endfor %}],
+                    messageBody: {% if `case`.req.messageBody == nil %}nil{% else %}"{{ `case`.req.messageBody! }}"{% endif %}
+                ),
                 creq: """
 {{ `case`.creq }}
 """,
@@ -37,11 +54,20 @@ public struct AwsSigv4OfficialTestSuiteContent {
                 authz: """
 {{ `case`.authz }}
 """,
-                sreq: """
-{{ `case`.sreq }}
+                sreq: AwsSigv4OfficialTestSuite.Case.Request(
+                    method: "{{ `case`.sreq.method }}",
+                    requestURI: "{{ `case`.sreq.requestURI }}",
+                    httpVersion: "{{ `case`.sreq.httpVersion }}",
+                    messageHeaders: [{% for messageHeader in `case`.sreq.messageHeaders %}
+                        ["{{ messageHeader.0 }}", """
+{{ messageHeader.1 }}
 """
+                        ]{% if forloop.counter != `case`.sreq.messageHeaders.count %},{% endif %}
+                    {% endfor %}],
+                    messageBody: {% if `case`.sreq.messageBody == nil %}nil{% else %}"{{ `case`.sreq.messageBody! }}"{% endif %}
+                )
             ){% if forloop.counter != suite.cases.count %},{% endif %}
-{% endfor %}
+        {% endfor %}
         ]
     )
 }

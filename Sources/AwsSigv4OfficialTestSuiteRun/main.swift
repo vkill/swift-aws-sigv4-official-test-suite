@@ -30,8 +30,9 @@ func currentDirectoryPath() -> String {
 let workDir = currentDirectoryPath()
 let generator = AwsSigv4OfficialTestSuiteGenerator(path: workDir + "official_test_suite/")
 
+let suite = try generator.perform()
 let context = [
-    "suite": try generator.perform()
+    "suite": suite
 ]
 
 let environment = Environment(loader: FileSystemLoader(paths: [.init(workDir + "templates/")]))
